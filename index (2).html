@@ -1,0 +1,95 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Fig. 6.14: welcome5.html -->
+<!-- Using equality and relational operators. -->
+<html>
+    <head>
+        <title>Compare Numbers</title>
+        <script type="text/javascript">
+            var firstNumber, 
+                secondNumber, 
+                thirdNumber,
+                maxNumber,
+                minNumber,
+
+            firstNumber = window.prompt("Enter first integer");
+            secondNumber = window.prompt("Enter second integer");
+            thirdNumber = window.prompt("Enter third integer");
+            firstNumber = parseInt(firstNumber);
+            secondNumber = parseInt(secondNumber);
+            thirdNumber = parseInt(thirdNumber);
+            findLargNum(firstNumber,secondNumber,thirdNumber);
+            findMinNum(firstNumber,secondNumber,thirdNumber);
+            ifVowel()
+            multiple()
+            between()
+            TotalAverage()
+            function findLargNum(firstNumber,secondNumber,thirdNumber){
+                if (firstNumber > secondNumber) {
+                    if(firstNumber > thirdNumber) window.alert(firstNumber + " is Max Number");
+                }
+                else if(secondNumber > thirdNumber) window.alert(secondNumber + " is Max Number");
+                else window.alert(thirdNumber + " is Max Number");
+            }
+            function findMinNum(firstNumber,secondNumber,thirdNumber){
+                if (firstNumber < secondNumber) {
+                    if(firstNumber < thirdNumber) window.alert(firstNumber + " is Min Number");
+                }
+                else if(secondNumber < thirdNumber) window.alert(secondNumber + " is Min Number");
+                else window.alert(thirdNumber + " is Min Number");
+            }
+            function ifVowel(){
+                userChar = window.prompt("Enter your char");
+                if (userChar=='a'||userChar=='e'||userChar=='o'||userChar=='i'||userChar=='u') {
+                    window.alert("Vowel");
+                }else{
+                    window.alert("Consonant");
+                }
+            }
+            function multiple(){
+                var dd=[]
+                integer = window.prompt("Enter your integer");
+                integer=parseInt(integer);
+                dd[0]=integer
+                var kk=integer
+                for(var i = 1;i<12;i++){
+                    integer=integer+kk;
+                    dd.push(integer)
+                }
+                window.alert(dd);
+            }
+            function between(){
+                var dd=[]
+                integer = window.prompt("Enter your integer");
+                integer=parseInt(integer);
+                for(var i = 1;i<=integer;i++){
+                    if(i%2==0){
+                        dd.push(i)
+                    }
+                }
+                window.alert(dd);
+            }
+            function TotalAverage(){
+                first = window.prompt("Enter first subject");
+                second = window.prompt("Enter second subject");
+                third = window.prompt("Enter third subject");
+                forth = window.prompt("Enter forth subject");
+                fifth = window.prompt("Enter fifth subject");
+                first=parseInt(first);
+                second=parseInt(second);
+                third=parseInt(third);
+                forth=parseInt(forth);
+                fifth=parseInt(fifth);
+
+                var sum = first+second+third+forth+fifth;
+                var average=(first+second+third+forth+fifth)/5
+                var perc=((first+second+third+forth+fifth)/500)*(100)
+
+                window.alert('Total Marks='+sum+'\n'+'Average Marks='+average+'\n'+'Percentage Marks='+perc);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style = "text-align:center">First Task!</h1>
+    </body>
+</html>

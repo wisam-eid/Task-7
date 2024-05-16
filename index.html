@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+</head>
+<body>
+    <div class="top">
+        <h2>Task1</h2>
+        <div class="border"></div>
+        <div id="box1">
+            <div class="box1-text-img">
+            <div class="box1-text">
+            <h2 style="color: white;">iphone 13 pro max</h2>
+            <p style="color: white; width: 400px;">Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incidiunt ut labore et
+                dolore magna aliqua</p>
+                </div>
+                <img   width="100px" height="150px" src="./assets/img/1715765433577.jpg">
+            </div>
+                <div class="box1-img">
+                  <button onclick= "myFunction()"> <img width="30px" height="70px" src="./assets/img/1715765433577.jpg"></button> 
+                  <button onclick= "myFunction1()"> <img width="30px" height="70px" src="./assets/img/1715765433568.jpg"></button>  
+                  <button onclick= "myFunction2()">  <img width="30px" height="70px" src="./assets/img/1715765433585.jpg"></button>
+                  <button onclick= "myFunction3()">  <img width="30px" height="70px" src="./assets/img/1715765433592.jpg"></button>
+                    <button onclick= "myFunction4()">  <img width="30px" height="70px" src="./assets/img/1715765433600.jpg"></button>
+                </div>
+         </div>
+    </div> 
+    <div class="center">
+        <h2>Task2</h2>
+        <div class="border"></div>
+        <div class="box2">
+            <i class="fa-regular fa-moon"></i>
+            <div class="box2-text">
+            <h2>Hello World</h2>
+            <p style="width: 300px;">Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod tempor incidiunt ut labore et
+                dolore magna aliqua</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <h2>Task3</h2>
+        <div class="border"></div>
+        <div class="buttons">
+        <button class="accordion">How many team members can i invite?</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">what is the maximum file upload size?</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">How di i reset my password</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+</div>
+<div class="footer">
+  <h2>Task4</h2>
+  <div class="border"></div>
+  <div class="box3">
+    <strong>How wos your experience?</strong>
+    <div class="star">
+    <i style="color: #d9d917;" class="fa-solid fa-star"></i>
+    <i style="color: #d9d917;" class="fa-solid fa-star"></i>
+    <i style="color: #d9d917;" class="fa-solid fa-star"></i>
+    <i style="color: black;" class="fa-solid fa-star"></i>
+    <i style="color: black;" class="fa-solid fa-star"></i>
+  </div>
+  <span>It is owesome</span>
+  </div>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+function myFunction() {
+  document.getElementById("box1") .style.backgroundColor = "blue" ;
+}
+function myFunction1() {
+  document.getElementById("box1") .style.backgroundColor = "black" ;
+}
+function myFunction2() {
+  document.getElementById("box1") .style.backgroundColor = "yellow" ;
+}
+function myFunction3() {
+  document.getElementById("box1") .style.backgroundColor = "gold" ;
+}
+function myFunction4() {
+  document.getElementById("box1") .style.backgroundColor = "green" ;
+} 
+</script>
+</body>
+</html> 
